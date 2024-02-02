@@ -1,0 +1,54 @@
+body {
+  background-color: #ff0000; /* Red background */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  border: 2px solid #ccc;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.employee-info-card {  
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+
+}
+
+.chart-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 65%; /* Adjust width */
+ 
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.info-item h3 {
+  margin-right: 10px;
+}
+
+.chart {
+  margin-top: 20px;
+}
+
+.chart svg {
+  width: 100%;
+  height: auto;
+}
+

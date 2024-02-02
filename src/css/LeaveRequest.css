@@ -1,0 +1,106 @@
+/* Add these styles to your existing CSS or create a new one */
+
+.leave-request-container {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .legend-container {
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
+  
+  .legend-item {
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+  
+  .more-than-seven-notes {
+    background-color: darkred;
+    color: white;
+  }
+  
+  .more-than-three-notes {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .light-green-notes {
+    background-color: lightgreen;
+    color: black;
+  }
+  
+  .content-container {
+    display: flex-column;
+    margin: 10px; /* Adjust the margin for breathing space */
+  }
+  
+  .datepicker-container {   
+    flex: 1;
+    margin-right: 10px; /* Adjust the margin-right for spacing */
+  }
+  
+  .notes-container {
+    flex: 1;
+    overflow-y: auto; /* Add this to enable scrolling if there are many notes */
+  }
+  
+  .notes-header {
+    margin-bottom: 10px;
+  }
+  
+  .note {
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  textarea {
+    margin-bottom: 10px;
+    height: 100px;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .delete-button {
+    background-color: darkred;
+  }
+  
+  /* ... (existing styles) */
+  .close-button {
+    padding: 3px 5px; /* Adjust padding for smaller button */
+    font-size: 12px; /* Adjust font size for smaller button */
+    background-color: #ccc;
+    border: none;
+    border-radius: 50%; /* Makes it a circle */
+    cursor: pointer;
+  }
+  
