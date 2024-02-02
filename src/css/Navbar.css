@@ -1,16 +1,15 @@
-/* Navbar.css */
 .navbar {
-  background-color: black; /* Set background color to black */
+  background-color: black; 
   color: #fff;
-  padding: 20px; /* Increase padding for a bigger size */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add a box shadow for relief effect */
+  padding: 20px; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .navbar a {
   color: #fff;
   text-decoration: none;
   margin-right: 15px;
-  font-size: 18px; /* Increase font size for better visibility */
+  font-size: 18px; 
 }
 
 .navbar a:hover {

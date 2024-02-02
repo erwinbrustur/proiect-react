@@ -11,11 +11,10 @@ const PayrollPage = () => {
   });
 
   const calculateNetSalary = () => {
-    // Assume some calculations based on Romanian law for deductions
     const tax = 0.1 * grossSalary;
     const socialSecurity = 0.25 * grossSalary;
     const healthInsurance = 0.1 * grossSalary;
-    const mealTickets = 600 // assuming there are 20 mean days
+    const mealTickets = 600 
 
     const totalDeductions = tax + socialSecurity + healthInsurance;
     const netSalary = grossSalary - totalDeductions + mealTickets;
@@ -59,7 +58,6 @@ const PayrollPage = () => {
       <ul>
             <li>Gym Membership: <a href="https://7card.ro/" target="_blank" rel="noopener noreferrer">7card</a></li>
             <li>Bookster Subscription: <a href="https://landing.bookster.ro/" target="_blank" rel="noopener noreferrer">Bookster</a></li>
-            {/* Add more hardcoded benefits here */}
             </ul>
     </div>
   );

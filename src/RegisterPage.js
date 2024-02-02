@@ -8,7 +8,6 @@ const RegisterPage = () => {
   const navigate = useNavigate();
 
   const handleRegisterSuccess = () => {
-    // Navigate to the home page upon successful registration
     navigate('/home');
   };
 
@@ -16,7 +15,6 @@ const RegisterPage = () => {
     <div className="register-page">
       <div className="register-container">
         <Auth onAuthSuccess={handleRegisterSuccess} isRegistration />
-        {/* Link to the login page */}
         <p>
            <Link to="/">Already have an account? Login here</Link>
         </p>

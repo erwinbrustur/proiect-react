@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import { useLocation } from 'react-router-dom';
 import { getDocs, collection } from 'firebase/firestore';
 import { db, auth } from './config/firebase';
-import './css/HomePage.css'; // Import CSS file for styling
+import './css/HomePage.css'; 
 
 function HomePage() {
   const [userInfo, setUserInfo] = useState([]);
@@ -24,11 +24,9 @@ function HomePage() {
     getUserInfo();
   }, [userInfoCollection]);
 
-  // Get the current user's information from Firebase Authentication
   const currentUser = auth.currentUser;
   const currentUserInfo = userInfo.find((user) => user.email === currentUser.email);
 
-  // Hardcoded data for the chart (example values)
   const chartData = [
     { month: 'Jan', performance: 10 },
     { month: 'Feb', performance: 20 },
@@ -68,7 +66,6 @@ function HomePage() {
               <h3>Department:</h3>
               <p>{currentUserInfo?.department}</p>
             </div>
-            {/* Add more employee data here */}
           </div>
         </div>
         <div className="chart-container">

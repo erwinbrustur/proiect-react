@@ -9,7 +9,7 @@ const Navbar = () => {
               || location.pathname === '/payroll';
 
   if (!showNavbar) {
-    return null; // Do not render Navbar on other pages
+    return null; 
   }
 
   return (
@@ -18,7 +18,7 @@ const Navbar = () => {
       <span className="right-side"> 
         <Link to="/home">Home</Link>
         <Link to="/leave-request">Leave Request</Link>
-        <Link to="/user-information">User Information</Link> {/* Link to the Admin page */}
+        <Link to="/user-information">User Information</Link> 
         <Link to="/timesheet">Timesheet</Link>
         <Link to="/payroll">Payroll</Link> 
       </span>
